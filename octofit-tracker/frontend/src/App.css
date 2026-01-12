@@ -1,0 +1,145 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #22223b;
+}
+
+
+/* 2005-style navbar */
+.navbar {
+  background: linear-gradient(90deg, #e0eafc 0%, #3a86ff 100%) !important;
+  border-bottom: 4px double #3a86ff;
+  box-shadow: 0 4px 0 #fff, 0 8px 0 #3a86ff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #0a2463 !important;
+  font-family: 'Arial Black', Arial, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #3a86ff;
+  font-size: 1.2em;
+  border-radius: 6px;
+  padding: 4px 12px;
+  margin-right: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar .navbar-brand img {
+  height: 48px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover {
+  background: #ffd60a;
+  color: #0a2463 !important;
+  text-decoration: underline;
+  box-shadow: 2px 2px 0 #fff, 4px 4px 0 #ffd60a;
+}
+
+.card {
+  background: #f8f9fa;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(67, 97, 238, 0.08);
+}
+.card-title {
+  color: #3a86ff;
+  font-weight: 700;
+}
+
+.table {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.table thead {
+  background: #3a86ff;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e7f0fd;
+}
+.table-bordered th, .table-bordered td {
+  border-color: #3a86ff;
+}
+
+
+/* 2005-style buttons */
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #e0eafc 0%, #3a86ff 100%);
+  color: #0a2463;
+  font-family: 'Arial Black', Arial, Verdana, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 3px double #3a86ff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 #fff, 4px 4px 0 #3a86ff;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #3a86ff;
+  padding: 8px 24px;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #3a86ff 0%, #e0eafc 100%);
+  color: #ffd60a;
+  box-shadow: 2px 2px 0 #fff, 6px 6px 0 #ffd60a;
+}
+
+
+/* 2005-style headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #0a2463;
+  font-family: 'Arial Black', Arial, Verdana, sans-serif;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #3a86ff;
+  letter-spacing: 2px;
+  border-bottom: 3px double #3a86ff;
+  background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+  padding: 8px 0 4px 0;
+  margin-bottom: 18px;
+}
+
+/* Sporty octofit logo icon */
+.octofit-logo {
+  height: 48px;
+  margin-right: 12px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3a86ff 60%, #ffd60a 100%);
+  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.18);
+  border: 3px solid #ffd60a;
+  padding: 4px;
+  /* Add a simple "sporty" effect: a white diagonal stripe */
+  position: relative;
+}
+.octofit-logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 60%;
+  height: 12%;
+  background: rgba(255,255,255,0.7);
+  transform: rotate(-25deg);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+a, .App-link {
+  color: #4361ee;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #ffd60a;
+}
+
+/* Custom logo style */
+.octofit-logo {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Favicon is set in public/index.html and public/favicon.ico */
