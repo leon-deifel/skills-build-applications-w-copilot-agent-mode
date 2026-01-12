@@ -85,10 +85,6 @@ DATABASES = {
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb://localhost:27017',
-            'username': '',
-            'password': '',
-            'authSource': 'admin',
-            'authMechanism': 'SCRAM-SHA-1',
         },
     }
 }
@@ -138,7 +134,8 @@ CORS_ALLOW_HEADERS = ['*']
 CORS_ALLOW_METHODS = ['*']
 
 # Allow all hosts
-CSRF_TRUSTED_ORIGINS = ['*']
+# For development, allow all http and https origins (Django 4.0+ requires scheme)
+CSRF_TRUSTED_ORIGINS = ['http://localhost', 'http://127.0.0.1', 'http://0.0.0.0', 'https://localhost', 'https://127.0.0.1', 'https://0.0.0.0']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
